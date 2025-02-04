@@ -2,11 +2,8 @@
 
 int main() {
     char d;
-    printf("You entered:");
-    if(scanf("%c", &d) == 1){
-        printf("you entered:%c",d);
-
-    }
+    scanf("%c", &d);
+    printf("You entered: %c\n", d);
     
-    return 0;
+        
 }
