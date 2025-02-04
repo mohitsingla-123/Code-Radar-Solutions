@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 
-int main() {
+int main()
+{
     int a;
     printf("You entered:");
-    scanf("%d",a);
+    scanf("%d", &a);
+
 }
+    
