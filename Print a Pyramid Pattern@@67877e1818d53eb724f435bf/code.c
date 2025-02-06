@@ -3,12 +3,12 @@
 int main() {
     int a;
     scanf("%d",&a);
-    for (int i = a; i > 0; i++)
+    for (int i = 0; i < 5; i++)
     {
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < 5; j++)
         {
             printf("*");
         }
        printf("\n") ;
-}
+    }
 }
