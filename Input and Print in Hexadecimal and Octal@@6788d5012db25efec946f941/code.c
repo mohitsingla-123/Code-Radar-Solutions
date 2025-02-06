@@ -5,7 +5,7 @@ int main()
     scanf("enter the no. %d", &a);
     printf("Hexadecimal: %o",a);
     printf("Octal: %h",a);
-    retuen 0;
+    return 0;
 
 
 }
