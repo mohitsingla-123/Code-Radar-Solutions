@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int isprime(int n)
+void isprime(int n)
 {
     int i,count=0;
     for(i=1;i<=n;i++){
