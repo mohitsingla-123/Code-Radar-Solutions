@@ -1,27 +1,34 @@
 #include <stdio.h>
 
 int main() {
-    int a,b;
-    char c;
-    int d = a+b;
-    int e = a - b;
+    int a, b;
+    char op;
 
-    int f = a*b;
-    int g = a/b;
+    // Taking input from the user
+    
+    scanf("%d %d %c", &a, &b, &op);
 
+    // Performing the operation based on the operator
+    switch(op) {
+        case '+':
+            printf("%d\n", a + b);
+            break;
+        case '-':
+            printf("%d\n", a - b);
+            break;
+        case '*':
+            printf("%d\n", a * b);
+            break;
+        case '/':
+            if (b != 0) {
+                printf("%d\n", a / b);
+            } else {
+                printf("Error: Division by zero\n");
+            }
+            break;
+        default:
+            printf("Error: Invalid operator\n");
+    }
 
-    scanf("%d %d %c",&a,&b,&c);
-    if(c == '+'){
-        printf("%d",d);
-    }
-    else if(c == '-'){
-        printf("%d",e);
-    }
-    else if(c == '*'){
-        printf("%d",f);
-    }
-    else if(c == '/'){
-        printf("%d",g);
-    }
-   
+    return 0;
 }
