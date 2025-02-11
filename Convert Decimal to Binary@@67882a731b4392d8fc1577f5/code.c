@@ -23,10 +23,10 @@ void decimalToBinary(int n) {
 
 int main() {
     int num;
-    printf("Enter a decimal number: ");
+   
     scanf("%d", &num);
     
-    printf("Binary representation: ");
+   
     decimalToBinary(num);
     
     return 0;
