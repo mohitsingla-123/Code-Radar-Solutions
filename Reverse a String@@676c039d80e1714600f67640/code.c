@@ -2,7 +2,6 @@ int main() {
     char str[100], temp;
     int start, end, length;
 
-    printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
     str[strcspn(str, "\n")] = 0;
@@ -19,7 +18,7 @@ int main() {
         end--;
     }
 
-    printf("Reversed string: %s\n", str);
+    printf(str);
 
     return 0;
 }
